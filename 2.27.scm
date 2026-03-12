@@ -1,5 +1,3 @@
-
-
 (define (deep_reverse items)
     (define (iter things answer)
         (if (null? things)
