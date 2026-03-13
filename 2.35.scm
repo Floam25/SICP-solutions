@@ -4,17 +4,6 @@
         (operand (car sequence) (accumulate operand initial (cdr sequence)))))
 
 
-; (define (enumerate_tree t)
-;     (cond
-;         ((pair? t) (append (enumerate_tree (car t)) (enumerate_tree (cdr t))))
-;         ((null? t) t)
-;         (else (list t))))
-
-
-
-
-
-
 (define (count_leaves t)
     (accumulate
         (lambda (x y) (+ x y))
